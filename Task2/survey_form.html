@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/fontawesome.min.css">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            
+            align-items: center;
+            
+        }
+        .required_field{
+            text-align: left;
+
+        }
+        .required_field::after{
+            content: "*";
+            color:red
+        }
+        .name_field{
+            display:flex;
+            flex-direction: row;
+        }
+        .star{
+            border: none;
+            background-color: unset;
+            font-size: 20px;
+            padding-left: 0px;
+            color: rgb(212, 122, 11);
+        
+        }
+        button:hover{
+            cursor: pointer;
+            color: rgb(212, 122, 11);
+
+        }
+        td{
+            padding: 5px;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+
+        }
+        
+        tr:nth-child(even){
+            background-color: rgb(227, 236, 233);
+        }
+        form{
+            border: 1px solid black;
+            padding: 30px;
+        }
+        .linebr{
+            white-space: pre-line;
+        }
+        div table{
+            width: 100%;
+        }
+        
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+    
+    <form>
+        <div>
+        <label for="name" class="required_field">Name</label>
+        <div class="name_field">
+        <div class="names">
+            <input name="fname" type="text"><br>
+            <label for="fname">first</label>
+        </div>
+        &nbsp
+        <div class="names">
+            <input name="lname" type="text"><br>
+            <label for="lname">last</label>
+        </div>
+        </div>
+        </div>
+        <br>
+        <div>
+            <label for="mail" class="required_field">Email</label><br>
+            <input type="email" style="width: 285px;">
+        </div>
+        <br>
+        <div>
+            <label for="rating" class="required_field rating">Your Experience</label><br>
+            <button class="star">&#9733</button>
+            <button class="star">&#9733</button>
+            <button class="star">&#9733</button>
+            <button class="star">&#9733</button>
+            <button class="star">&#9733</button>
+            
+        </div>
+        <p >Overall, how would you rate your Experience with us?</p>
+        <div>
+            <label for="satisfaction" class="required_field">How satisfied are you with</label>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Very Unsatisfied</td>
+                    <td>Unsatisfied</td>
+                    <td>Neutral</td>
+                    <td>satisfied</td>
+                    <td>Very satisfied</td>
+                </tr>
+                <tr>
+                    <td>Purchase</td>
+                    <td><input type="radio" name="pradio"></td>
+                    <td><input type="radio" name="pradio"></td>
+                    <td><input type="radio" name="pradio"></td>
+                    <td><input type="radio" name="pradio"></td>
+                    <td><input type="radio" name="pradio"></td>
+                </tr>
+                <tr>
+                    <td>Service</td>
+                    <td><input type="radio" name="sradio"></td>
+                    <td><input type="radio" name="sradio"></td>
+                    <td><input type="radio" name="sradio"></td>
+                    <td><input type="radio" name="sradio"></td>
+                    <td><input type="radio" name="sradio"></td>
+                </tr>
+                <tr>
+                    <td>Company Overall</td>
+                    <td><input type="radio" name="overall"></td>
+                    <td><input type="radio" name="overall"></td>
+                    <td><input type="radio" name="overall"></td>
+                    <td><input type="radio" name="overall"></td>
+                    <td><input type="radio" name="overall"></td>
+                </tr>
+
+            </table>
+
+        </div>
+        <br>
+        <div>
+            <label for="satisfaction" class="required_field">How likely are you to</label>
+            <table>
+                <tr>
+                    <td></td>
+                    <td>Very Unlikely</td>
+                    <td>Unlikely</td>
+                    <td>Neutral</td>
+                    <td>Likely</td>
+                    <td>Very Likely</td>
+                </tr>
+                <tr>
+                    <td class="linebr">Buy from us again</td>
+                    <td><input type="radio" name="bradio"></td>
+                    <td><input type="radio" name="bradio"></td>
+                    <td><input type="radio" name="bradio"></td>
+                    <td><input type="radio" name="bradio"></td>
+                    <td><input type="radio" name="bradio"></td>
+                </tr>
+                <tr>
+                    <td class="linebr">Recommend our 
+                        products to others</td>
+                    <td><input type="radio" name="rradio"></td>
+                    <td><input type="radio" name="rradio"></td>
+                    <td><input type="radio" name="rradio"></td>
+                    <td><input type="radio" name="rradio"></td>
+                    <td><input type="radio" name="rradio"></td>
+                </tr>
+                <tr>
+                    <td class="linebr">Recommend our 
+                        company to others</td>
+                    <td><input type="radio" name="com"></td>
+                    <td><input type="radio" name="com"></td>
+                    <td><input type="radio" name="com"></td>
+                    <td><input type="radio" name="com"></td>
+                    <td><input type="radio" name="com"></td>
+                </tr>
+
+            </table>
+
+        </div>
+        <br>
+        <div>
+            <label for="text">Additional comments or suggestions</label><br>
+            <textarea id="text" rows="4" cols="79"></textarea>
+        </div>
+        <br>
+        <button type="submit" style="padding: 10px;">Submit</button>
+
+        
+        
+        
+
+    </form>
+
+</body>
+</html>

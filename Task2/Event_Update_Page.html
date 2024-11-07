@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <style>
+        .outline{
+            border: 2px solid black;
+            margin: 30px;
+        }
+        .alignInRow{
+            display: flex;
+        }
+        label{
+            display: inline-block;
+            text-align: right;
+            width: 150px;
+        }
+        input{
+            display: inline-block;
+        }
+        .image{
+            margin: 30px;
+        }
+        .form_class{
+            margin-top: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outline">
+        <h2 style="text-align: center; font-size:xx-large">Women Empowerment</h2>
+        <p style="text-align: center; font-size:large">Number of available seats: 23</p>
+        <div class="alignInRow outline">
+            <div style="width: 50%;" class="image">
+                <img src="Women_Empowerment.jpg" alt="Women Empowerment Image">          
+            </div>
+            <div style="width: 70%;">
+                
+                <form class="form_class">
+                    <label for="name">Name:</label>
+                    <input id="name" type="text"><br><br>
+                    <label for="email">Email:</label>
+                    <input id="email" type="email"><br><br>
+                    <label for="num">Phone No:</label>
+                    <input id="num" type="tel"><br><br>
+                    <label for="seat">Number of seats:</label>
+                    <input id="seat" type="number" min="1" max="23" value="2"><br><br>
+                    <label for="name2">Name of attendee2:</label> 
+                    <input id="name2" type="text"> <br><br>
+                    <button type="submit">Submit</button>
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+                    &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+                    &nbsp &nbsp &nbsp 
+                    <button type="reset">Cancel</button>
+                </form>
+            
+            </div>
+        </div>
+    </div>
+</body>
+</html>
